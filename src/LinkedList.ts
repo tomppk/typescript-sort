@@ -1,3 +1,5 @@
+import { Sorter } from './Sorter';
+
 class Node {
   // By default next = null. Next is a reference to the next node in the list.
   next: Node | null = null;
@@ -6,7 +8,7 @@ class Node {
   constructor(public data: number) {}
 }
 
-export class LinkedList {
+export class LinkedList extends Sorter {
   // Head is reference to the first node in the list.
   head: Node | null = null;
 
